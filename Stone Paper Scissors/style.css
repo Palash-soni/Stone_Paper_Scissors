@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #A6CDC6;
+}
+
+#heading{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    background-color: #16404D;
+    line-height: 3rem;
+}
+
+#comp{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#rockM, #paperM, #scissorsM{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+#scissorsM{
+    background: url("images/ScissorsM.jpeg");
+    background-position: center;
+    animation: computer 1s normal 0s infinite ease-in-out;
+}
+
+#paperM{
+    background: url("images/PaperM.jpeg");
+    background-position: center;
+    animation: computer 1s normal 0s infinite ease-in-out;
+}
+
+#rockM{
+    background: url("images/RockM.jpeg");
+    background-position: center;
+    animation: computer 1s normal 0s infinite ease-in-out;
+}
+
+#usr{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#rock, #paper, #scissors{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    border: 5px solid white;
+    cursor:pointer;
+}
+
+#rock:hover , #paper:hover , #scissors:hover{
+    transition: all 0.1s ease-in-out 0s;
+    filter: drop-shadow(0px 0px 8px black);
+}
+
+#scissors{
+    background: url("images/Scissors.jpeg");
+    background-position:center;
+}
+
+#paper{
+    background: url("images/Paper.jpeg");
+    background-position: center;
+}
+
+#rock{
+    background: url("images/Rock.jpeg");
+    background-position: center;
+}
+
+#res{
+    margin-top: 3rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#out-reset{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#reset{
+    margin: 0 auto;
+    margin-top: 3rem;
+    height: 4rem;
+    width: 15rem;
+    background-color: #DDA853;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+    border: 0;
+    border: 2px solid white;
+    visibility: hidden;
+}
+
+#reset:hover{
+    transition: all 0.1s ease-in-out 0s;
+    filter: drop-shadow(0px 0px 3px black);
+}
+
+@keyframes computer {
+    0%{
+        border: 5px solid white;
+    }
+    100%{
+        border: 5px solid black;
+    }
+}
